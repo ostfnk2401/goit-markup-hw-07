@@ -12,7 +12,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
-    background-color: #FFFFFF;
+    background-color: var(--body-color);
 }
 
 .list{
@@ -47,7 +47,7 @@ body{
 }
 
 .studio_footer{
-    color: #F4F4FD;
+    color: var(--light-mode-bg);
 }
 
 .header_links{
@@ -110,19 +110,15 @@ body{
 
 .button:hover,
 .button:focus{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
-    gap: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--body-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    /* border-style: none; */
+    border:none;
     background: #404BBF;
     cursor: pointer;
 }
@@ -179,17 +175,13 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #4D5AE5;
+    color: var(--noactive-btn);
     text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
 .buttons:hover,
 .buttons:focus{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 12px 24px;
     background: var(--active-color);
     border-radius: 4px;
