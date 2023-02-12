@@ -84,8 +84,8 @@ body{
 }
 .hero{
     background-color: var(--main-color);
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people_office_bg.jpeg);
-    background-size: cover;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/people_office_bg.jpeg);
+    background-size: cover; 
     background-repeat: no-repeat;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -140,7 +140,17 @@ body{
 }
 .features_list{
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
+}
+.features_item_icon{
+    display: flex;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--light-mode-bg);
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
 }
 .features_item{
     max-width: 264px;
@@ -214,6 +224,34 @@ body{
 }
 .team_text_margin{
     margin-bottom: 8px;
+}
+.social_list{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+.social_link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--noactive-btn);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.social_link:hover,
+.social_link:focus{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--active-color);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.team_social_icon{
+    fill: var(--light-mode-bg);
 }
 .footer{
     background-color: var(--main-color);
