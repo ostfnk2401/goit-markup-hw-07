@@ -9,6 +9,28 @@
     --body-color:#FFFFFF;
     --green-icon:#31D0AA;
 }
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+address{
+    font-style: normal;
+}
+button{
+    cursor:pointer;
+}
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
@@ -61,7 +83,7 @@ body{
 }
 .header_links{
     display: block;
-    padding: 24px;
+    padding: 24px 0;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -86,7 +108,8 @@ body{
     color: var(--active-color);
 }
 .hero{
-    background-color: var(--main-color);
+    max-width: 1440px;
+    margin: 0 auto;
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/people_office_bg.jpeg);
     background-size: cover; 
     background-repeat: no-repeat;
@@ -212,6 +235,7 @@ body{
 .description{
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--body-text);
 }
 .title{
     font-weight: 700;
@@ -230,7 +254,10 @@ body{
     padding: 32px 0;
 
 }
-
+.team_item{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
 .social_list{
     display: flex;
     flex-direction: row;
@@ -241,6 +268,15 @@ body{
     margin-top: 8px;
 }
 .social_link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--noactive-btn);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.social_link:hover{
     display: flex;
     width: 40px;
     height: 40px;
@@ -319,8 +355,6 @@ body{
     display: flex;
 }
 .social_media{
-    display: flex;
-    flex-direction: column;
     margin-left: 120px;
 }
 .social_media_text{
@@ -332,14 +366,11 @@ body{
 }
 .social_media_list{
     display: flex;
-    flex-direction: row;
     gap: 16px;
 }
 .social_media_item{
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
 }
 .social_media_link{
     display: flex;
@@ -348,9 +379,11 @@ body{
     width: 100%;
     height: 100%;
     fill: var(--light-mode-bg);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
-.social_media_item:hover,
-.social_media_item:focus {
+.social_media_link:hover,
+.social_media_link:focus{
     background-color: var(--green-icon);
 }
 .footer_description{
