@@ -212,7 +212,6 @@ body{
 .description{
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--body-text);
 }
 .title{
     font-weight: 700;
@@ -428,6 +427,7 @@ body{
 }
 .photo-item-link {
     display: block;
+    color: var(--body-text);
 }
 .photo-item-link:hover,
 .photo-item-link:focus {
