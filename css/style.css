@@ -80,6 +80,7 @@ body{
 .header_list{
     display: flex;
     gap: 40px;
+    position: relative;
 }
 .header_links{
     display: block;
@@ -440,7 +441,8 @@ body{
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
-    border: 1px solid var(--subtle-backgrounds)
+    border: 1px solid var(--subtle-backgrounds);
+    border-top: none;
 }
 
 .photo_list {
