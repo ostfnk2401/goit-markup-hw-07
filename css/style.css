@@ -56,6 +56,9 @@ body{
     align-items: center;
     gap:76px;
 }
+.header_links.active{
+    color: var(--active-color);
+}
 .active::after{
     display: block;
     content: "";
@@ -64,7 +67,7 @@ body{
     bottom: -1px;
     background-color: var(--active-color);
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     border-radius: 2px;
 }
@@ -341,7 +344,7 @@ body{
     border: 1px solid var(--helper-text);
     border-radius: 4px;
     fill: var(--helper-text);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers_link:hover,
@@ -412,7 +415,7 @@ body{
     color: var(--noactive-btn);
     text-align: center;
     letter-spacing: 0.04em;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons:hover,
 .buttons:focus{
@@ -422,8 +425,8 @@ body{
     border-color: var(--active-color);
 }
 .portfolio{
-
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 .btn_list{
     display: flex;
@@ -451,7 +454,6 @@ body{
 .photo_list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 120px;
 }
 
 .photo_notes{
