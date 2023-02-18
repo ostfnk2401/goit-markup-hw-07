@@ -90,4 +90,10 @@
     .customers_item{
         width: calc((100% - 48px) / 3)
     }
+
+    /* ============= FOOTER ================== */
+
+    .footer{
+        padding: 96px 15px;
+    }
 }
