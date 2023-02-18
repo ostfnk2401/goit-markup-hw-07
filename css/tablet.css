@@ -96,4 +96,14 @@
     .footer{
         padding: 96px 15px;
     }
+
+    .footer_flex_container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .footer_item{
+        width: calc((100% - 24px) / 2);
+    }
 }
