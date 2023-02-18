@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container{
+        max-width: 552px;
+        padding: 0;
+    }
+    .team_list{
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+    .team_item{
+        width: calc((100% - 24px) / 2);
+    }
+}
