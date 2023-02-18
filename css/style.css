@@ -408,10 +408,8 @@ body{
 .social_media_link:focus{
     background-color: var(--green-icon);
 }
-.footer_p {
+.footer_subscribe {
     margin-bottom: 16px;
-
-    font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
     text-align: left;
@@ -430,14 +428,26 @@ body{
 .email{
     width: 264px;
     height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-right: 24px;
     color: var(--light-mode-bg);
-    border: 1px solid #FFFFFF4D;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: var(--main-color);
+    background: var(--main-color);
+}
+.email::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
 }
 .subscribe_form{
     display: flex;
@@ -571,7 +581,7 @@ body{
     top: 50%;
     left: 50%;
     width: 408px;
-    height: 576px;
+    height: 584px;
     transform: scale(1) translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #FCFCFC;
@@ -604,10 +614,12 @@ body{
 .modal_close_btn:focus .modal_close_btn_icon {
     fill: #FFFFFF;
 }
-.modal>p {
+.modal_text {
     font-weight: 500;
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #2E2F42;
 }
 .modal_form {
@@ -618,7 +630,7 @@ body{
     display: block;
     font-size: 12px;
     line-height: 1.33;
-    color: var(--light-slate-color);
+    color: var(--helper-text);
     margin-bottom: 4px;
 }
 .modal_form_input {
@@ -691,9 +703,6 @@ body{
     color: #757575;
     margin-bottom: 24px;
 }
-.modal_form_check_desc a {
-    color: #4D5AE5;
-}
 .modal_form_check:checked + .modal_form_check_desc::before {
     background-color: #404BBF;
     border-color: #404BBF;
@@ -717,10 +726,13 @@ body{
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal_form_submit:hover,
 .modal_form_submit:focus {
-    border-color: #404BBF;
     background-color: var(--active-color);
+}
+.modal_privacy {
+    color: #4D5AE5;
+    text-decoration: underline;
 }
