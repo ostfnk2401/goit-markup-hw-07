@@ -1,7 +1,12 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container{
-        max-width: 552px;
-        padding: 0;
+        max-width: 582px;
+    }
+    /* OUR_TEAM */
+
+    .team{
+        padding: 96px;
+        padding-bottom: 104px;
     }
     .team_list{
         row-gap: 72px;
@@ -9,5 +14,18 @@
     }
     .team_item{
         width: calc((100% - 24px) / 2);
+    }
+    .team_text{
+        padding: 32px 16px;
+    }
+
+    /* Customers */
+
+    .customers_list{
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .customers_item{
+        width: calc((100% - 48px) / 3)
     }
 }

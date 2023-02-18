@@ -1,0 +1,37 @@
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+    
+    /* OUR_TEAM */
+    
+    .team{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .team_title{
+        width: 163px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+    }
+    .team_list{
+        display: flex;
+        gap: 24px;
+    }
+    .team_item{
+        width: 264px;
+    }
+    .team_text{
+        padding: 32px 16px;
+    }
+
+    /* Customers */
+
+    .customers_list{
+        gap:24px;
+    }
+    .customers_item{
+        width: calc((100% - 120px) / 6)
+    }
+}

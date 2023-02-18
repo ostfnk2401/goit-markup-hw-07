@@ -1,9 +1,22 @@
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
     .container{
-        max-width: 396px;
+        max-width: 426px;
     }
+
+    /* OUR_TEAM */
+    
     .team{
         padding-left: 82px;
         padding-right: 82px;
+    }
+
+    /* Customers */
+
+    .customers{
+        padding: 96px 0;
+    }
+    
+    .customers_item{
+        width: calc((100% - 16px) / 2)
     }
 }
