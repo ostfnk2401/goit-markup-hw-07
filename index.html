@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <title>Studio</title>
 </head>
 <body>
@@ -53,8 +56,8 @@
                                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="sub_title">Strategy</h3>
-                        <p class="description">Our goal is to identify the business problem to walk away with the perfect and creative
+                        <h3 class="features_subtitle">Strategy</h3>
+                        <p class="features_descr">Our goal is to identify the business problem to walk away with the perfect and creative
                             solution. </p>
                     </li>
                     <li class="features_item">
@@ -63,8 +66,8 @@
                                 <use href="./images/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="sub_title">Punctuality</h3>
-                        <p class="description">Bring the key message to the brand's audience for the best price within the shortest
+                        <h3 class="features_subtitle">Punctuality</h3>
+                        <p class="features_descr">Bring the key message to the brand's audience for the best price within the shortest
                             possible time.</p>
                     </li>
                     <li class="features_item">
@@ -73,8 +76,8 @@
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="sub_title">Diligence</h3>
-                        <p class="description">Research and confirm brands that present the strongest digital growth opportunities and
+                        <h3 class="features_subtitle">Diligence</h3>
+                        <p class="features_descr">Research and confirm brands that present the strongest digital growth opportunities and
                             minimize risk.</p>
                     </li>
                     <li class="features_item">
@@ -83,8 +86,8 @@
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="sub_title">Technologies</h3>
-                        <p class="description">Design practice focused on digital experiences. We bring forth a deep passion for
+                        <h3 class="features_subtitle">Technologies</h3>
+                        <p class="features_descr">Design practice focused on digital experiences. We bring forth a deep passion for
                             problem-solving.</p>
                     </li>
                 </ul>
@@ -104,17 +107,26 @@
                         <img src="./images/services/img3.jpg" alt="laptop">
                     </li>
                 </ul>
-            </div >
+            </div>
         </section>
         <section class="team">
             <div class="container">
                 <h2 class="title">Our Team</h2>
                 <ul class="team_list">
                     <li class="team_item">
-                        <img src="./images/team_cards/card.jpeg" alt="mark">
+                        <img
+                        srcset="
+                          ./images/team_cards/card.jpeg   1x,
+                          ./images/team_cards/card1@2x.jpeg    2x
+                        "
+                        src="./images/team_cards/card.jpeg"
+                        alt="Mark"
+                        width="264"
+                        height="260"
+                      />
                         <div class="team_text">
                             <h3 class="sub_title">Mark Guerrero</h3>
-                            <p class="description">Product Designer</p>
+                            <p class="description team_descr">Product Designer</p>
                             <ul class="social_list">
                                 <li class="team_social_link">
                                     <a href="" class="social_link">
@@ -151,7 +163,7 @@
                         <img src="./images/team_cards/card2.jpg" alt="tom">
                         <div class="team_text">
                             <h3 class="sub_title">Tom Ford</h3>
-                            <p class="description">Frontend Developer</p>
+                            <p class="description team_descr">Frontend Developer</p>
                             <ul class="social_list">
                                 <li class="team_social_link">
                                     <a href="" class="social_link">
@@ -188,7 +200,7 @@
                         <img src="./images/team_cards/card3.jpg" alt="camila">
                         <div class="team_text">
                             <h3 class="sub_title">Camila Garcia</h3>
-                            <p class="description">Marketing</p>
+                            <p class="description team_descr">Marketing</p>
                             <ul class="social_list">
                                 <li class="team_social_link">
                                     <a href="" class="social_link">
@@ -225,7 +237,7 @@
                         <img src="./images/team_cards/card4.jpg" alt="daniel">
                         <div class="team_text">
                             <h3 class="sub_title">Daniel Wilson</h3>
-                            <p class="description">UI Designer</p>
+                            <p class="description team_descr">UI Designer</p>
                             <ul class="social_list">
                                 <li class="team_social_link">
                                     <a href="" class="social_link">
@@ -353,7 +365,7 @@
                 </ul>
             </div>
             <div class="subscribe">
-                <p class="footer_p">Subscribe</p>
+                <p class="footer_subscribe">Subscribe</p>
                 <form class="subscribe_form">
                     <input
                     type="email"
@@ -363,7 +375,7 @@
                     />
                     <button type="submit" class="subscribe_button button">
                         <span class="subscribe_span">Subscribe</span>
-                        <svg width="24" height="20">
+                        <svg width="24" height="24">
                             <use href="./images/symbol-defs.svg#icon-send-footer"></use>
                         </svg>
                     </button>
@@ -378,7 +390,7 @@
                     <use href="./images/symbol-defs.svg#icon-modal_close"></use>
                 </svg>
             </button>
-            <p>Leave your contacts and we will call you back</p>
+            <p class="modal_text">Leave your contacts and we will call you back</p>
             <form class="modal_form">
                 <label class="modal_form_field">
                     <span class="modal_form_input_desc">Name</span>
@@ -443,7 +455,7 @@
                 />
                 <label for="user-policy" class="modal_form_check_desc"
                     >I accept the terms and conditions of the&nbsp;
-                    <a href="">Privacy Policy</a>
+                    <a href="" class="modal_privacy">Privacy Policy</a>
                 </label>
                 <button type="submit" class="modal_form_submit">Send</button>
             </form>
