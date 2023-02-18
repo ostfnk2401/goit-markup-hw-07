@@ -2,6 +2,19 @@
     .container{
         max-width: 582px;
     }
+    /* Features */
+
+    .features_list{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .features_item{
+        width: calc((100% - 24px) / 2);
+    }
+
     /* OUR_TEAM */
 
     .team{
