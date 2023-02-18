@@ -180,8 +180,10 @@ body{
 .features_list{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items:center;
-    gap: 72px;
+    row-gap: 72px;
+    column-gap: 24px;
 }
 .features_item_icon{
     display: none;
