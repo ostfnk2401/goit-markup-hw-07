@@ -1,6 +1,10 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container{
         max-width: 552px;
+        margin: 0
+    }
+    .sub_container{
+        margin: 0 auto;
     }
     body{
         margin: 0;
@@ -11,18 +15,14 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-    .header_container{
-        display: flex;
-        gap: 118px;
-    }
     .header_navigation{
         gap:120px
     }
     .header_container{
         display: flex;
-        justify-content: space-between;
         padding-right: 0;
         padding-left: 0;
+        gap: 118px;
     }
     .header_list{
         display: flex;
