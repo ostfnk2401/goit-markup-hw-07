@@ -225,4 +225,8 @@
         background-color: var(--noactive-btn);
         color: var(--body-color);
     }
+
+    .modal{
+        width: 408px;
+    }
 }
