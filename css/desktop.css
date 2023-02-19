@@ -229,4 +229,7 @@
     .modal{
         width: 408px;
     }
+    .mobile-menu {
+        display: none;
+      }
 }
