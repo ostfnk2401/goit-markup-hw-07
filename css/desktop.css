@@ -6,6 +6,7 @@
     /* =======header======== */
     .header{
         padding-top: 0;
+        padding-bottom: 0;
         border-bottom: 1px solid var(--subtle-backgrounds);
     }
     .header_container{
@@ -232,4 +233,20 @@
     .mobile-menu {
         display: none;
       }
+    .menu-open{
+        display: none;
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .hero-section {
+        width: 100%;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/backgrounds/people-office_bg@2x.jpg);
+        background-size: cover;
+        }   
+    }
 }

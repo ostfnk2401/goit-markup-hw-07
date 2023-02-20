@@ -1,7 +1,11 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container{
         max-width: 552px;
-        margin: 0
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header{
+        padding-left: 0;
     }
     .sub_container{
         margin: 0 auto;
@@ -14,6 +18,7 @@
         padding-top: 24px;
         padding-left: 16px;
         padding-right: 16px;
+        padding-bottom: 0;
     }
     .header_navigation{
         gap:120px
@@ -54,6 +59,7 @@
     /* Features */
     .features_container{
         min-width: 736px;
+        margin: 0 auto;
     }
     .features_list{
         flex-direction: row;
@@ -66,6 +72,15 @@
         flex-direction: column;
     }
 
+    .hero{
+        width: 100%;
+        margin: 0 auto;
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/tablet_hero@1x.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
     /* OUR_TEAM */
 
     .team{
@@ -94,7 +109,9 @@
     }
 
     /* ============= FOOTER ================== */
-
+    .footer_flex_container{
+        margin: 0 auto;
+    }
     .footer{
         padding: 96px 0;
     }
@@ -137,4 +154,20 @@
     .mobile-menu {
         display: none;
       }
+    .menu-open{
+        display: none;
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+        .hero{
+        width: 100%;
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/backgrounds/tablet_hero@2x.jpg);
+        background-size: cover;
+        }   
+    }
 }
