@@ -37,7 +37,7 @@
     .address{
         display: flex;
         gap: 4px;
-        padding-bottom: 10px;
+        padding-bottom: 12px;
     }
     .burger_button{
         display: none;
@@ -78,8 +78,8 @@
         background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/tablet_bg.jpg);
         background-size: cover; 
         background-repeat: no-repeat;
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding-top: 112px;
+        padding-bottom: 108px;
     }
     /* OUR_TEAM */
 
@@ -119,7 +119,6 @@
         display: flex;
         flex-direction: row;
         gap: 24px;
-        margin-bottom: 72px;
     }
     .footer_description{
         text-align: start;

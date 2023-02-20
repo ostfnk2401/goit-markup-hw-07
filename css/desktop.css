@@ -101,6 +101,8 @@
         background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/desktop_bg.jpg);
         background-size: cover; 
         background-repeat: no-repeat;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
     .hero_title{
         width: 496px;
@@ -191,6 +193,7 @@
     .footer_tablet_container{
         flex-direction: row;
         gap: 120px;
+        margin: 0;
     }
     .footer_subscribe{
         text-align: left;
@@ -258,5 +261,8 @@
             background-size: cover; 
             background-repeat: no-repeat;
             }
+    }
+    .photo_container{
+        padding: 0;
     }
 }

@@ -26,8 +26,8 @@
       background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/mobile_bg.jpg);
       background-size: cover; 
       background-repeat: no-repeat;
-      padding-top: 188px;
-      padding-bottom: 188px;
+      padding-top: 118px;
+      padding-bottom: 118px;
     }
     .hero_title{
       width: 320px;
@@ -54,7 +54,6 @@
     .mob_menu_tel{
       font-size: 36px;
     }
-    
     .mob_social_list{
       gap: 56px;
     }
