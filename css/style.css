@@ -24,7 +24,7 @@ a{
 }
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 address{
@@ -40,7 +40,8 @@ body{
     background-color: var(--body-color);
 }
 .container{
-    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .header{
     padding-top: 24px;
@@ -141,9 +142,9 @@ body{
     padding-bottom: 188px;
 }
 .hero_title{
-    width: 320px;
+    width: 283px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--body-color);
@@ -218,6 +219,9 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
+}
+.services{
+    display: none;
 }
 .team{
     padding-top: 96px;
@@ -443,6 +447,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 72px;
+    margin-bottom: 72px;
 }
 .subscribe {
     width: 100%;
@@ -890,16 +895,13 @@ body{
     visibility: hidden;
     pointer-events: none;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 479px),
-  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 479px),
-  screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 479px) {
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx){
       .hero{
       width: 100%;
-      background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/services/hero_mobile@2x.jpg);
-      background-size: cover;
-      }   
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/mobile_bg@2x.jpg);
+      background-size: cover; 
+      background-repeat: no-repeat;
+      }
   }

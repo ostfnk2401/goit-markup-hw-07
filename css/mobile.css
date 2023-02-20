@@ -1,35 +1,37 @@
 @media screen and (min-width: 480px)  and (max-width: 767px) {
-    .container{
-        max-width: 426px;
-        margin: 0 auto;
+  .sub_container{
+    width: 396px;
+    margin: 0 auto;
+}
+  /* burger */
+  .burger-btn {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+      width: 32px;
+      height: 22px;
     }
-
-    /* burger */
-    .burger-btn {
-        display: block;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        margin: 0;
-        width: 32px;
-        height: 22px;
-      }
-      .burger-icon {
-        stroke: var(--main-color);
-        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .burger-icon:hover,
-      .burger-icon:focus{
-        stroke: var(--active-color);
-      }
-      .hero{
-        width: 100%;
-        margin: 0 auto;
-        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/mobile_bg.jpg);
-        background-size: cover; 
-        background-repeat: no-repeat;
-        padding-top: 188px;
-        padding-bottom: 188px;
+    .burger-icon {
+      stroke: var(--main-color);
+      transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .burger-icon:hover,
+    .burger-icon:focus{
+      stroke: var(--active-color);
+    }
+    .hero{
+      width: 100%;
+      background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/mobile_bg.jpg);
+      background-size: cover; 
+      background-repeat: no-repeat;
+      padding-top: 188px;
+      padding-bottom: 188px;
+    }
+    .hero_title{
+      width: 320px;
+      font-size: 36px;
     }
     /* OUR_TEAM */
 
@@ -61,12 +63,9 @@
     screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
         .hero{
         width: 100%;
-        background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/backgrounds/hero_bg@2x.jpg);
-        background-size: cover;
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/backgrounds/mobile_bg@2x.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
         }   
     }
 }
