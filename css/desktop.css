@@ -102,6 +102,13 @@
         background-size: cover; 
         background-repeat: no-repeat;
     }
+    .hero_title{
+        width: 496px;
+        font-size: 56px;
+    }
+    .services{
+        display: flex;
+    }
     /* Features */
     
     .features{

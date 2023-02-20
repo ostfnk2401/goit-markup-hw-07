@@ -818,8 +818,6 @@ body{
     fill: var(--body-color);
     background-color: var(--noactive-btn);
 }
-.menu-close-icon {
-}
 .mob_menu_list {
     margin-bottom: 50px;
 }
@@ -886,9 +884,6 @@ body{
 .mob_social_link:hover,
 .mob_social_link:focus {
   background-color: var(--active-color);
-}
-.mob_menu_tel{
-
 }
 .is-hidden {
     opacity: 0;
