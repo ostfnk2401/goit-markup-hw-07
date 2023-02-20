@@ -9,6 +9,9 @@
     body{
         margin: 0;
     }
+    .services{
+        display: none;
+    }
     /* ======= HEADER ======== */
     .header{
         padding-top: 24px;

@@ -425,7 +425,7 @@ body{
     color: var(--body-color);
 }
 .footer_description{
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--subtle-backgrounds);
