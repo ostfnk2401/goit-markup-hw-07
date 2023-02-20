@@ -38,11 +38,69 @@
                         <li class="address_item"><a href="tel:+110001111111" class="address_links">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
-                <button type="button" class="menu-open">
-                    <svg class="menu-open_btn">
-                        <use></use>
+                <button type="button" class="menu-open" data-menu-open>
+                    <svg class="menu-open-icon" width="32" height="22">
+                        <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
                     </svg>
                 </button>
+            </div>
+        </div>
+        <div class="mob_menu is-hidden" data-menu>
+            <div class="container menu_container">
+                <div>
+                    <button type="button" class="menu-close" data-menu-close>
+                        <svg class="menu-close-icon" width="8" height="8">
+                            <use href="./images/symbol-defs.svg#icon-close_menu"></use>
+                        </svg>
+                    </button>
+                    <nav>
+                        <ul class="mob_menu_list">
+                            <li class="mob_menu_item">
+                                <a href="./index.html" class="mob_menu_link page-active">Studio</a>
+                            </li>
+                            <li class="mob_menu_item">
+                                <a href="./portfolio.html" class="mob_menu_link">Portfolio</a>
+                            </li>
+                            <li class="mob_menu_item">
+                                <a href="#" class="mob_menu_link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <a href="tel:+110001111111" class="mob_menu_tel">+11 (000) 111-11-11</a>
+                    <a href="mailto:info@devstudio.com" class="mob_menu_email">info@devstudio.com</a>
+                    <ul class="mob_social_list">
+                        <li class="mob_social_item">
+                            <a href="" class="mob_social_link">
+                                <svg class="mob_social_icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-instagram_cards"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob_social_item">
+                            <a href="" class="mob_social_link">
+                                <svg class="mob_social_icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-twitter_cards"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob_social_item">
+                            <a href="" class="mob_social_link">
+                                <svg class="mob_social_icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-facebook_cards"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mob_social_item">
+                            <a href="" class="mob_social_link">
+                                <svg class="mob_social_icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin_cards"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -103,37 +161,32 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="services">
+        <section class="services">
             <div class="container">
                 <h2 class="title">What Are We Doing</h2>
                 <ul class="services_list">
                     <li class="services_item">
-                        <img src="./images/services/img1.jpg" alt="computer">
+                        <img srcset="./images/services/img1@2x.jpg 2x"
+                        src="./images/services/img1.jpg" alt="computer" width="360" height="300">
                     </li>
                     <li class="services_item">
-                        <img src="./images/services/img2.jpg" alt="phone">
+                        <img srcset="./images/services/img2@2x.jpg 2x"
+                        src="./images/services/img2.jpg" alt="phone" width="360" height="300">
                     </li>
                     <li class="services_item">
-                        <img src="./images/services/img3.jpg" alt="laptop">
+                        <img srcset="./images/services/img3@3x.jpg 2x"
+                        src="./images/services/img3.jpg" alt="laptop" width="360" height="300">
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <section class="team">
             <div class="container">
                 <h2 class="title">Our Team</h2>
                 <ul class="team_list">
                     <li class="team_item">
-                        <img
-                        srcset="
-                          ./images/team_cards/card.jpeg   1x,
-                          ./images/team_cards/card1@2x.jpeg    2x
-                        "
-                        src="./images/team_cards/card.jpeg"
-                        alt="Mark"
-                        width="264"
-                        height="260"
-                      />
+                        <img srcset="./images/team_cards/card1@2x.jpeg 2x"
+                            src="./images/team_cards/card.jpeg" alt="Mark" width="264" height="260"/>
                         <div class="team_text">
                             <h3 class="sub_title">Mark Guerrero</h3>
                             <p class="description team_descr">Product Designer</p>
@@ -170,7 +223,8 @@
                         </div>
                     </li>
                     <li class="team_item">
-                        <img src="./images/team_cards/card2.jpg" alt="tom">
+                        <img srcset="./images/team_cards/card2@2x.jpg 2x" 
+                        src="./images/team_cards/card2.jpg" alt="tom" width="264" height="260">
                         <div class="team_text">
                             <h3 class="sub_title">Tom Ford</h3>
                             <p class="description team_descr">Frontend Developer</p>
@@ -207,7 +261,8 @@
                         </div>
                     </li>
                     <li class="team_item">
-                        <img src="./images/team_cards/card3.jpg" alt="camila">
+                        <img srcset="./images/team_cards/card3@2x.jpg 2x"
+                        src="./images/team_cards/card3.jpg" alt="camila" width="264" height="260">
                         <div class="team_text">
                             <h3 class="sub_title">Camila Garcia</h3>
                             <p class="description team_descr">Marketing</p>
@@ -244,7 +299,8 @@
                         </div>
                     </li>
                     <li class="team_item">
-                        <img src="./images/team_cards/card4.jpg" alt="daniel">
+                        <img srcset="./images/team_cards/card4@2x.jpg 2x"
+                        src="./images/team_cards/card4.jpg" alt="daniel" width="264" height="260">
                         <div class="team_text">
                             <h3 class="sub_title">Daniel Wilson</h3>
                             <p class="description team_descr">UI Designer</p>
@@ -399,7 +455,7 @@
         <div class="modal">
             <button type="button" class="modal_close_btn" data-modal-close>
                 <svg class="modal_close_btn_icon" width="8" height="8">
-                    <use href="./images/symbol-defs.svg#icon-modal_close"></use>
+                    <use href="./images/symbol-defs.svg#icon-close_menu"></use>
                 </svg>
             </button>
             <p class="modal_text">Leave your contacts and we will call you back</p>
