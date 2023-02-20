@@ -50,7 +50,9 @@
     }
 
 
-
+    .modal{
+      width: 392px;
+    }
     .mob_menu_tel{
       font-size: 36px;
     }
