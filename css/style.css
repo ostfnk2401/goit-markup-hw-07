@@ -808,6 +808,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
+    margin-left: auto;
 }
 .menu-close:hover,
 .menu-close:focus {
